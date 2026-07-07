@@ -1,22 +1,22 @@
 class Csq < Formula
   desc "Multi-account rotation and quota management for Claude Code"
   homepage "https://github.com/terrene-foundation/csq"
-  version "2.16.2"
+  version "2.17.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/terrene-foundation/csq/releases/download/v#{version}/csq-macos-aarch64"
-      sha256 "acf298466d8e5c61a88f9e247154c40a566e944e819ac97e619082857995488a"
+      sha256 "86ebc8f6d25bf92aaebe64c5ba9fa5dd101a11cde664e9e910611a1285669a71"
     else
       url "https://github.com/terrene-foundation/csq/releases/download/v#{version}/csq-macos-x86_64"
-      sha256 "6cea4666ce59b7eb74597773e4e8f9581ac8fec1877d4eb4374a58bcef754b17"
+      sha256 "8b4eabecf2f0e603337b3ed0cdf0c78c669433a07a8560cd42e8f9d95b354a14"
     end
   end
 
   on_linux do
     url "https://github.com/terrene-foundation/csq/releases/download/v#{version}/csq-linux-x86_64"
-    sha256 "6883ca11d4830c91d3a3fee219dffe19491c0a1b558e4a0ba394c2fcb7c64caa"
+    sha256 "a3cf3895d479344d8eb7c97b92e9ff576d81e8f5b9b2d57ce9080df1529ac045"
   end
 
   def install
